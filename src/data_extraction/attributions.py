@@ -13,7 +13,8 @@ def get_attributions_metadata(
 
     /atribuicoes-<batch-id>.xlsx
 
-    Inside each atribution file, columns represent labelers and rows represent video frames. This function reads all atribution files in the given directory and extracts metadata.
+    Inside each atribution file, columns represent labelers and rows represent video frames. 
+    This function reads all atribution files in the given directory and extracts metadata.
 
     Parameters:
         path_to_attributions (str): Path to the directory containing atribution files.

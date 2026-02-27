@@ -11,6 +11,8 @@ import cv2 as cv
 import os
 import pandas as pd
 from PIL import Image
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 class VFSSImageDataset(Dataset):
@@ -19,7 +21,7 @@ class VFSSImageDataset(Dataset):
         Dataset para carregar frames de vídeos VFSS e seus respectivos alvos (máscaras, pontos, ROI, mapas de calor).
 
         Args:
-            video_frame_df (pd.DataFrame): DataFrame contendo colunas 'video_path', 'frame_id' e 'target_dir'.
+            video_frame_df (pd.DataFrame): DataFrame contendo colunas 'frame_path', 'frame_id' e 'target_dir'.
             target (str): Tipo de alvo a ser carregado ('mask', 'points', 'roi', 'heatmap' ou combinação deles separados por '+').
             output_dim (tuple): Dimensão de saída para mapas de calor ou ROI.
             transform (callable, optional): Transformação a ser aplicada às imagens.
@@ -68,10 +70,11 @@ class VFSSImageDataset(Dataset):
                 raise ValueError(f"Invalid target: {t}. Must be one of {self.__valid_target}")
         return True
 
-    def __load_frame_from_video_path(self, path: str, frame: int):
+    def __load_frame_from_path(self, path: str, frame: int):
         ''' Load a specific frame from a video file given its path and frame index. '''
 
         root_dir = get_project_root_directory()
+        path = path.replace("..\\", "")
         relative_path = os.path.join(root_dir, path)
 
         if not os.path.exists(relative_path):
@@ -111,6 +114,7 @@ class VFSSImageDataset(Dataset):
     def __load_points_from_path(self, path: str, filename='Results.csv'):
         ''' Load points data from the given path. '''
         path = os.path.join(path, filename)
+
         if not os.path.exists(path):
             raise FileNotFoundError(f"File not found: {path}")
         
@@ -138,6 +142,7 @@ class VFSSImageDataset(Dataset):
 
         '''
         root_dir = get_project_root_directory()
+        path = path.replace("..\\", "")
         relative_path = os.path.join(root_dir, path)
 
         target_output = {}
@@ -166,19 +171,20 @@ class VFSSImageDataset(Dataset):
     def __getitem__(self, idx):
         row = self.video_frame_df.iloc[idx]
         
-        video_path = row.video_path
         target_dir = row.target_dir
         frame_id = int(row.frame_id)
+        frame_path = row.frame_path
+
+        image = np.array(Image.open(frame_path).convert("RGB"))
         
-        image = self.__load_frame_from_video_path(video_path, frame_id)
-        self.__current_image_original_dim = image.size
+        self.__current_image_original_dim = (image.shape[0], image.shape[1])
 
         target = self.__load_target_from_path(self.target, target_dir) 
        
         if self.transform:
             image = T.ToTensor()(image)
             image = self.transform(image)
-
+        
         if self.target_transform:
             for target_i in self.target.split('+'):
                 target[target_i] = T.ToTensor()(target[target_i])

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-PROJECT_NAME = "vfss-data-split"
+PROJECT_NAME = "vfss_to_docker"
 
 def get_script_directory() -> str:
     '''Get the directory of the current script.'''

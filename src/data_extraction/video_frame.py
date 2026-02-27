@@ -264,6 +264,7 @@ def are_all_paths_valid(video_frame_df: pd.DataFrame) -> None:
 def create_video_frame_df(
     videos_dir : str,
     labels_dir: str,
+    frames_dir: str,
     attribtutions_dir: str = None,
     patients_metadata_path : str = '../data/metadados/patients_metadata.csv',
     batch : Optional[list[str]] = None,
@@ -311,7 +312,7 @@ def create_video_frame_df(
         video_frame_df (pd.DataFrame)
             DataFrame containing labeled frames metadata.
     """
-    final_columns = ['video_frame', 'video_id', 'frame_id', 'batch', 'fonte_dados', 'paciente_id', 'momento', 'procedimento', 'selected_labeler', 'video_path', 'target_dir']
+    final_columns = ['video_frame', 'video_id', 'frame_id', 'batch', 'fonte_dados', 'paciente_id', 'momento', 'procedimento', 'selected_labeler', 'video_path', 'frame_path', 'target_dir']
 
     # Load label and attributions metadata
     label_metadata_df = get_label_metadata(labels_dir)
@@ -346,6 +347,10 @@ def create_video_frame_df(
     patients_metadata_df = load_patients_metadata_from_csv()
     
     video_frame_df = video_frame_df.merge(patients_metadata_df, on='video_id', how='left')
+    video_frame_df["frame_path"] = video_frame_df.apply(
+        lambda row: os.path.join(frames_dir, f"v{row['video_id']}_f{row['frame_id']}.png"),
+        axis=1
+    )
     return video_frame_df[final_columns]
 
 
