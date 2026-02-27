@@ -7,7 +7,7 @@ data/resultados/
 data/vis/
 data/video_frame
 
-notebooks/playground_VC/optuna_trials
+.venv/
 
 figs/*
 

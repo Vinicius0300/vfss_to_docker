@@ -24,7 +24,7 @@ plotly>=5.20.0
 seaborn>=0.13.2
 
 # Jupyter / Notebook support (necessário para plotly)
-nbformat>=5.9.0
+nbformat>=4.2.0
 ipython>=8.18.0
 ipywidgets>=8.1.0
 
