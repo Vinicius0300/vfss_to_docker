@@ -5,22 +5,6 @@ import os
 import shutil
 
 def get_frame_from_video(video_path: str, frame_number: int):
-    """
-    Retorna um frame específico de um vídeo .avi como imagem (numpy array).
-
-    Parâmetros:
-    ------------
-    video_path : str
-        Caminho completo do vídeo (.avi)
-    frame_number : int
-        Número do frame desejado (começando em 1)
-    
-    Retorna:
-    ---------
-    frame : np.ndarray
-        Imagem correspondente ao frame solicitado (BGR)
-        Retorna None se o frame não existir.
-    """
     cap = cv.VideoCapture(video_path)
     if not cap.isOpened():
         raise IOError(f"Não foi possível abrir o vídeo: {video_path}")
@@ -28,17 +12,23 @@ def get_frame_from_video(video_path: str, frame_number: int):
     total_frames = int(cap.get(cv.CAP_PROP_FRAME_COUNT))
     if frame_number < 1 or frame_number > total_frames:
         cap.release()
-        raise ValueError(f"O vídeo possui {total_frames} frames. O frame {frame_number} é inválido.")
+        return None # Ou raise, dependendo da sua preferência
 
-    # OpenCV indexa frames a partir de 0 → precisamos subtrair 1
+    # Tenta o pulo rápido
     cap.set(cv.CAP_PROP_POS_FRAMES, frame_number - 1)
+    
+    # Verificação de segurança: O OpenCV realmente parou onde pedimos?
+    current_pos = int(cap.get(cv.CAP_PROP_POS_FRAMES))
+    if current_pos != frame_number - 1:
+        # Se falhou, uma alternativa é o pulo manual (lento, mas preciso)
+        # cap.set(cv.CAP_PROP_POS_FRAMES, 0)
+        # for _ in range(frame_number - 1): cap.grab()
+        pass 
+
     success, frame = cap.read()
     cap.release()
 
-    if not success:
-        raise RuntimeError(f"Falha ao ler o frame {frame_number} do vídeo {video_path}")
-
-    return frame
+    return frame if success else None
 
 
 def cria_pasta(df_data: pd.DataFrame, target: str, path_data: str, root_video_file: str, overwrite: bool = True):

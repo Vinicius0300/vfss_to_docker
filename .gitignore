@@ -10,7 +10,7 @@ data/frames
 
 .venv/
 
-figs/*
+fig/*
 
 *.png
 *.tif
