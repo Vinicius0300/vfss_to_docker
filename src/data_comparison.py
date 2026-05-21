@@ -143,10 +143,16 @@ def correct_inverted_masks(row):
 
 
 # Gerando Cores para gráficos
-def generate_color_list(n, cmap_name = "Wistia"):
+def generate_color_list(n, cmap_name="tab10"):
     cmap = plt.get_cmap(cmap_name)
-    colors = [cmap(i) for i in np.linspace(0, 1, n)]
-    return colors 
+
+    # tab10 possui 10 cores bem distintas
+    if hasattr(cmap, "colors"):
+        colors = [cmap.colors[i % len(cmap.colors)] for i in range(n)]
+    else:
+        colors = [cmap(i) for i in np.linspace(0, 1, n)]
+
+    return colors
 
 # Visualizando Marcações de Pontos
 def plot_coherence_points(df_video_frame, video_folder, output_folder = ""):
