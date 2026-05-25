@@ -5,33 +5,45 @@ v113_f106,point,nan
 v114_f12,point,nan
 v114_f120,point,nan
 v115_f150,point,nan
-v125_f113,point,nan
+v122_f126,point,C4 Incorreta
+v123_f101,point,C4 Incorreta
+v123_f31,point,C4 Incorreta
+v123_f58,point,C4 Incorreta
+v125_f197,point,C4 Incorreta
 v128_f169,point,nan
 v128_f236,point,nan
 v133_f37,point,nan
 v134_f124,point,nan
 v137_f112,point,nan
+v139_f114,point,C4 Incorreta
 v13_f150,point,nan
+v13_f178,point,C2 Incorreta
 v141_f187,point,nan
 v141_f204,point,nan
 v142_f181,point,nan
 v143_f186,point,nan
+v144_f18,point,C4 Incorreta
 v148_f150,point,nan
 v14_f130,point,nan
 v150_f13,point,nan
-v154_f188,point,nan
+v153_f83,point,C4 Incorreta
 v155_f117,point,nan
 v155_f206,point,nan
 v155_f234,point,nan
 v15_f26,point,nan
-v166_f182,point,nan
 v169_f117,point,nan
 v169_f208,point,nan
 v169_f81,point,nan
 v173_f48,point,nan
 v173_f82,point,nan
 v175_f16,point,nan
+v175_f5,point,C2 Incorreta
+v176_f59,point,C4 Incorreta
+v177_f106,point,Tudo Errado
 v177_f31,point,nan
+v180_f143,point,C2 Incorreta
+v180_f149,point,C2 Incorreta
+v181_f255,point,C2 Incorreta
 v183_f30,point,nan
 v184_f88,point,nan
 v185_f116,point,nan
@@ -43,12 +55,12 @@ v188_f158,point,nan
 v189_f222,point,nan
 v189_f223,point,nan
 v189_f72,point,nan
-v190_f156,point,nan
+v190_f156,point,Tudo Errado
+v191_f116,point,Tudo Errado
 v194_f162,point,nan
-v195_f99,point,nan
+v195_f83,point,Tudo Errado
 v196_f225,point,nan
 v196_f230,point,nan
-v196_f37,point,nan
 v197_f12,point,nan
 v197_f9,point,nan
 v198_f48,point,nan
@@ -64,16 +76,23 @@ v202_f93,point,nan
 v203_f191,point,nan
 v203_f235,point,nan
 v206_f1,point,nan
-v206_f12,point,nan
+v206_f12,point,Tudo Errado
 v206_f2,point,nan
 v207_f210,point,nan
 v208_f117,point,nan
 v209_f94,point,nan
 v211_f176,point,nan
 v212_f236,point,nan
+v213_f112,point,C4 Incorreta
+v214_f77,point,C4 Incorreta
+v215_f129,point,C4 Incorreta
 v216_f193,point,nan
+v216_f204,point,Tudo Errado
 v219_f83,point,nan
+v221_f151,point,C4 Incorreta
 v221_f35,point,nan
+v223_f27,point,C4 Incorreta
+v224_f16,point,C4 Incorreta
 v224_f216,point,nan
 v230_f212,point,nan
 v25_f12,point,nan

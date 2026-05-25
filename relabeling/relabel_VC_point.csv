@@ -1,42 +1,67 @@
 video_frame,rotulo,motivo
-v10_f24,point,nan
 v115_f150,point,nan
 v117_f217,point,nan
 v118_f200,point,nan
 v11_f41,point,nan
+v122_f126,point,C4 Incorreta
+v122_f250,point,C4 Incorreta
+v122_f99,point,C4 Incorreta
+v123_f157,point,C4 Incorreta
+v123_f31,point,C4 Incorreta
+v123_f58,point,C4 Incorreta
+v125_f113,point,C4 Incorreta
+v125_f197,point,C4 Incorreta
+v126_f100,point,C4 Incorreta
+v127_f63,point,C4 Incorreta
+v127_f77,point,C4 Incorreta
 v128_f169,point,nan
+v128_f237,point,C4 Incorreta
 v129_f163,point,nan
-v12_f90,point,nan
 v131_f7,point,nan
-v135_f38,point,nan
-v136_f135,point,nan
+v133_f10,point,C4 Incorreta
 v13_f100,point,nan
 v13_f150,point,nan
 v152_f203,point,nan
+v152_f85,point,C4 Incorreta
+v152_f95,point,C4 Incorreta
+v153_f72,point,C4 Incorreta
 v153_f82,point,nan
+v153_f83,point,C4 Incorreta
+v154_f188,point,C4 Incorreta
+v154_f233,point,C4 Incorreta
+v155_f118,point,C4 Incorreta
 v155_f206,point,nan
-v156_f145,point,nan
+v156_f209,point,C4 Incorreta
+v156_f227,point,C4 Incorreta
+v156_f228,point,C4 Incorreta
+v158_f7,point,C4 Incorreta
 v159_f242,point,nan
 v15_f27,point,nan
-v178_f137,point,nan
+v160_f232,point,C4 Incorreta
+v167_f211,point,C4 Incorreta
+v177_f124,point,Tudo Errado
+v177_f32,point,C2 Incorreta
+v178_f136,point,C2 Incorreta
+v178_f137,point,C2 Incorreta
+v180_f143,point,C2 Incorreta
+v181_f197,point,C4 Incorreta
+v181_f223,point,C2 Incorreta
+v181_f255,point,C2 Incorreta
 v182_f203,point,nan
-v185_f116,point,nan
+v186_f190,point,C4 Incorreta
+v186_f24,point,C4 Incorreta
 v188_f158,point,nan
-v190_f156,point,nan
 v193_f58,point,nan
+v195_f99,point,C4 Incorreta
+v196_f37,point,C4 Incorreta
+v196_f61,point,C4 Incorreta
+v199_f108,point,C4 Incorreta
+v199_f111,point,C4 Incorreta
 v201_f95,point,nan
-v203_f215,point,nan
-v205_f129,point,nan
 v206_f1,point,nan
-v206_f12,point,nan
-v206_f2,point,nan
-v208_f117,point,nan
 v208_f95,point,nan
 v210_f43,point,nan
-v211_f176,point,nan
-v212_f236,point,nan
-v213_f112,point,nan
-v215_f129,point,nan
+v222_f229,point,C2 Incorreta
 v230_f212,point,nan
 v233_f214,point,nan
 v47_f120,point,nan
