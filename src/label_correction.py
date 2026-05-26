@@ -294,6 +294,61 @@ class LabelEditorControls(QWidget):
 
         layout.addSpacing(10)
 
+        # --- Filtros de imagem ---
+        from qtpy.QtWidgets import QCheckBox, QGroupBox, QSpinBox
+        filters_box = QGroupBox("Filtros de imagem")
+        filters_layout = QVBoxLayout()
+        filters_layout.setContentsMargins(8, 8, 8, 8)
+        filters_layout.setSpacing(6)
+
+        # Linha 1: checkbox CLAHE (com espaço em relação ao título do groupbox)
+        filters_layout.addSpacing(8)
+        self.chk_clahe = QCheckBox("CLAHE")
+        self.chk_clahe.setChecked(False)
+        self.chk_clahe.toggled.connect(self._on_clahe_toggled)
+        filters_layout.addWidget(self.chk_clahe)
+
+        # Linha 2: parâmetros indentados abaixo do checkbox
+        clahe_params = QWidget()
+        clahe_params.setContentsMargins(16, 0, 0, 0)  # indentação
+        clahe_params_layout = QHBoxLayout()
+        clahe_params_layout.setContentsMargins(16, 0, 0, 0)
+        clahe_params_layout.setSpacing(4)
+
+        lbl_clip = QLabel("Clip:")
+        lbl_clip.setStyleSheet("color: #aaa; font-size: 11px;")
+        self.clahe_clip = QSpinBox()
+        self.clahe_clip.setMinimum(1)
+        self.clahe_clip.setMaximum(40)
+        self.clahe_clip.setValue(2)
+        self.clahe_clip.setFixedWidth(44)
+        self.clahe_clip.setStyleSheet("font-size: 11px;")
+        self.clahe_clip.valueChanged.connect(self._on_clahe_param_changed)
+
+        lbl_grid = QLabel("Grid:")
+        lbl_grid.setStyleSheet("color: #aaa; font-size: 11px;")
+        self.clahe_grid = QSpinBox()
+        self.clahe_grid.setMinimum(1)
+        self.clahe_grid.setMaximum(32)
+        self.clahe_grid.setValue(8)
+        self.clahe_grid.setFixedWidth(44)
+        self.clahe_grid.setStyleSheet("font-size: 11px;")
+        self.clahe_grid.valueChanged.connect(self._on_clahe_param_changed)
+
+        clahe_params_layout.addWidget(lbl_clip)
+        clahe_params_layout.addWidget(self.clahe_clip)
+        clahe_params_layout.addSpacing(8)
+        clahe_params_layout.addWidget(lbl_grid)
+        clahe_params_layout.addWidget(self.clahe_grid)
+        clahe_params_layout.addStretch()
+        clahe_params.setLayout(clahe_params_layout)
+        filters_layout.addWidget(clahe_params)
+
+        filters_box.setLayout(filters_layout)
+        layout.addWidget(filters_box)
+
+        layout.addSpacing(10)
+
         # --- Botões principais ---
         btn_salvar = QPushButton("💾  Salvar e Avançar")
         btn_salvar.setStyleSheet(
@@ -330,6 +385,22 @@ class LabelEditorControls(QWidget):
     def _on_brush_size_changed(self, value: int):
         self.brush_size_label.setText(str(value))
         self.editor.set_brush_size(value)
+
+    def _on_clahe_toggled(self, checked: bool):
+        self.editor.apply_clahe(
+            enabled=checked,
+            clip_limit=self.clahe_clip.value(),
+            tile_grid_size=self.clahe_grid.value(),
+        )
+
+    def _on_clahe_param_changed(self, _value: int):
+        # Só re-aplica se o CLAHE estiver ativo
+        if self.chk_clahe.isChecked():
+            self.editor.apply_clahe(
+                enabled=True,
+                clip_limit=self.clahe_clip.value(),
+                tile_grid_size=self.clahe_grid.value(),
+            )
 
     def update_info(
         self,
@@ -437,6 +508,7 @@ class LabelEditorApp:
         self._img_layer = None
         self._points_layer = None
         self._mask_layer = None
+        self._original_frame = None
 
     # ------------------------------------------------------------------
     # Validação
@@ -547,6 +619,9 @@ class LabelEditorApp:
         # Limpa layers anteriores
         self.viewer.layers.clear()
 
+        # Guarda frame original para restauração ao remover filtros
+        self._original_frame = frame_rgb.copy()
+
         # Layer de imagem base
         self._img_layer = self.viewer.add_image(
             frame_rgb,
@@ -621,6 +696,10 @@ class LabelEditorApp:
 
         self.viewer.title = f"Label Editor — {video_frame} [{rotulo}]"
         self.viewer.reset_view()
+
+        # Reseta o CLAHE ao trocar de frame (evita aplicar filtro de frame anterior)
+        if self.controls is not None:
+            self.controls.chk_clahe.setChecked(False)
 
     # ------------------------------------------------------------------
     # Ações dos botões
@@ -728,6 +807,48 @@ class LabelEditorApp:
         self.brush_slider_value = size
         if self._mask_layer is not None:
             self._mask_layer.brush_size = size
+
+    def apply_clahe(
+        self,
+        enabled: bool,
+        clip_limit: float = 2.0,
+        tile_grid_size: int = 8,
+    ) -> None:
+        """Aplica ou remove o CLAHE na camada de imagem base.
+
+        O CLAHE é apenas visual — o frame original não é modificado,
+        apenas a exibição no napari é atualizada.
+        """
+        if self._img_layer is None:
+            return
+
+        if not enabled:
+            # Restaura a imagem original sem filtro
+            self._img_layer.data = self._original_frame.copy()
+            return
+
+        frame = self._original_frame.copy()
+
+        # Converte para LAB para aplicar CLAHE só no canal de luminância
+        if frame.ndim == 3:
+            lab = cv2.cvtColor(frame, cv2.COLOR_RGB2LAB)
+            l, a, b = cv2.split(lab)
+            clahe = cv2.createCLAHE(
+                clipLimit=float(clip_limit),
+                tileGridSize=(tile_grid_size, tile_grid_size),
+            )
+            l_eq = clahe.apply(l)
+            lab_eq = cv2.merge([l_eq, a, b])
+            frame_eq = cv2.cvtColor(lab_eq, cv2.COLOR_LAB2RGB)
+        else:
+            # Grayscale
+            clahe = cv2.createCLAHE(
+                clipLimit=float(clip_limit),
+                tileGridSize=(tile_grid_size, tile_grid_size),
+            )
+            frame_eq = clahe.apply(frame)
+
+        self._img_layer.data = frame_eq
 
     # ------------------------------------------------------------------
     # Ponto de entrada
