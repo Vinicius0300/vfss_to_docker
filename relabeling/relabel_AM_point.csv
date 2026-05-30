@@ -94,19 +94,82 @@ v221_f35,point,nan
 v223_f27,point,C4 Incorreta
 v224_f16,point,C4 Incorreta
 v224_f216,point,nan
-v230_f212,point,nan
-v25_f12,point,nan
-v27_f68,point,nan
-v28_f160,point,nan
-v33_f24,point,nan
-v39_f1,point,nan
-v45_f15,point,nan
-v48_f74,point,nan
-v57_f75,point,nan
-v60_f51,point,nan
-v60_f88,point,nan
-v63_f33,point,nan
-v71_f118,point,nan
-v71_f136,point,nan
-v74_f65,point,nan
-v86_f2,point,nan
+v225_f47,point,C4 Incorreta
+v226_f12,point,C4 Incorreta
+v226_f192,point,C4 Incorreta
+v227_f4,point,C4 Incorreta
+v227_f70,point,C4 Incorreta
+v228_f49,point,C4 Incorreta
+v229_f15,point,C4 Incorreta
+v229_f193,point,Tudo Errado
+v229_f36,point,Tudo Errado
+v230_f212,point,Tudo Errado
+v232_f171,point,C4 Incorreta
+v232_f65,point,C4 Incorreta
+v233_f113,point,C4 Incorreta
+v233_f214,point,C4 Incorreta
+v235_f6,point,C4 Incorreta
+v236_f11,point,C4 Incorreta
+v236_f190,point,C4 Incorreta
+v23_f134,point,C4 Incorreta
+v23_f78,point,C4 Incorreta
+v24_f39,point,Tudo Errado
+v24_f9,point,C4 Incorreta
+v25_f12,point,Tudo Errado
+v25_f29,point,C4 Incorreta
+v25_f76,point,C4 Incorreta
+v27_f190,point,Tudo Errado
+v27_f68,point,Tudo Errado
+v28_f100,point,C4 Incorreta
+v28_f136,point,C2 Incorreta
+v28_f160,point,C2 Incorreta
+v2_f106,point,C4 Incorreta
+v30_f15,point,C4 Incorreta
+v32_f41,point,C4 Incorreta
+v33_f24,point,Tudo Errado
+v34_f124,point,C2 Incorreta
+v35_f88,point,C4 Incorreta
+v36_f10,point,C4 Incorreta
+v39_f1,point,C2 Incorreta
+v3_f37,point,C4 Incorreta
+v3_f6,point,C2 Incorreta
+v41_f149,point,C4 Incorreta
+v42_f88,point,Tudo Errado
+v44_f122,point,C4 Incorreta
+v45_f15,point,C4 Incorreta
+v45_f91,point,Tudo Errado
+v46_f53,point,C4 Incorreta
+v48_f134,point,C2 Incorreta
+v48_f36,point,C4 Incorreta
+v48_f74,point,C2 Incorreta
+v4_f46,point,C4 Incorreta
+v4_f67,point,Tudo Errado
+v54_f127,point,C4 Incorreta
+v57_f31,point,C4 Incorreta
+v57_f75,point,Ponto Não Rotulado
+v60_f51,point,Ponto Não Rotulado
+v63_f33,point,Tudo Errado
+v65_f151,point,Tudo Errado
+v71_f118,point,Ponto Não Rotulado
+v71_f136,point,Ponto Não Rotulado
+v71_f163,point,C4 Incorreta
+v74_f65,point,Tudo Errado
+v76_f80,point,C4 Incorreta
+v77_f45,point,C4 Incorreta
+v78_f128,point,Tudo Errado
+v78_f92,point,C4 Incorreta
+v81_f182,point,C4 Incorreta
+v81_f47,point,C4 Incorreta
+v81_f7,point,C2 Incorreta
+v82_f137,point,C2 Incorreta
+v82_f72,point,C4 Incorreta
+v83_f41,point,C4 Incorreta
+v86_f2,point,Ponto Não Rotulado
+v89_f27,point,C4 Incorreta
+v8_f93,point,C4 Incorreta
+v91_f3,point,C4 Incorreta
+v98_f85,point,C4 Incorreta
+v99_f16,point,C4 Incorreta
+v99_f7,point,C4 Incorreta
+v9_f50,point,C4 Incorreta
+v9_f54,point,C4 Incorreta

@@ -143,7 +143,7 @@ def correct_inverted_masks(row):
 
 
 # Gerando Cores para gráficos
-def generate_color_list(n, cmap_name="tab10"):
+def generate_color_list(n, cmap_name="spring"):
     cmap = plt.get_cmap(cmap_name)
 
     # tab10 possui 10 cores bem distintas
