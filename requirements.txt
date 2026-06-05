@@ -35,3 +35,4 @@ tifffile>=2023.1.1
 
 # Utilities
 pathlib2>=2.3.7
+findpapers==0.6.7
