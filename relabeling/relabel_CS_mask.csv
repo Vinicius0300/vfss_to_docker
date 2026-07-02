@@ -1,2 +1,108 @@
 video_frame,rotulo,motivo
 v100_f10,mask,Borda Direita Errada
+v101_f74,mask,Topo C2 Errado + Borda Direita C4 e C5
+v105_f132,mask,"Base da C6 (está sobreposta pelo ombro, mas dá pra ver  um pouquinho)"
+v107_f226,mask,C2 Incorreta
+v108_f55,mask,Vértebra Faltando
+v10_f18,mask,Não marcou C2
+v126_f15,mask,Máscara Não Rotulada
+v128_f235,mask,Falta + Todas as bordas estão deslocadas para direita
+v12_f90,mask,Canto Inferior Esquerdo C6 + Topo C2
+v130_f152,mask,Topo da C2
+v134_f181,mask,Vértebra Faltando
+v136_f179,mask,Remover última vértebra incompleta
+v138_f66,mask,Acho que dá pra corrigir o canto inferior direito da C7 (dá pra ver a borda com Clahe)
+v141_f187,mask,Tudo Errado
+v143_f181,mask,Tudo Errado
+v143_f182,mask,Vértebra Faltando
+v144_f154,mask,Topo C2
+v144_f70,mask,Vértebra Faltando
+v145_f234,mask,Borda Direita Errada C4
+v14_f109,mask,"Borda Direita Incorreta C3, C4"
+v150_f111,mask,Topo C2
+v154_f135,mask,Topo da C2
+v156_f145,mask,C2 Incorreta
+v156_f227,mask,Base C8
+v159_f203,mask,C2 Incorreta
+v15_f114,mask,Topo Direito C2 + Falta Vértebra
+v15_f27,mask,Borda Inferior da C5 está no Topo da C6
+v165_f131,mask,Vértebra Faltando
+v168_f174,mask,C2 Incorreta
+v16_f122,mask,Tudo Errado
+v170_f161,mask,Borda Direita C4 (se quiser deixar a da C5 menos reta também...)
+v170_f72,mask,C2 Incorreta
+v171_f110,mask,Tudo Errado
+v172_f122,mask,Inferior da C2
+v173_f105,mask,Vértebra Faltando
+v174_f47,mask,Borda Direita C3
+v176_f79,mask,Base da C2
+v177_f124,mask,Vértebra Faltando
+v179_f143,mask,Vértebra Faltando
+v179_f185,mask,Vértebra Faltando
+v181_f223,mask,Vértebra Faltando
+v182_f160,mask,Vértebra Faltando
+v182_f161,mask,Máscara Não Rotulada
+v182_f244,mask,Borda Direita C4
+v185_f76,mask,Falta + C2 Topo
+v188_f138,mask,Tudo Errado
+v18_f160,mask,Vértebra Faltando
+v190_f155,mask,C5
+v190_f163,mask,C2 + Falta
+v192_f200,mask,Vértebra Faltando
+v192_f65,mask,Topo C2
+v19_f16,mask,Vértebra Faltando
+v1_f83,mask,C2 + C5 + C6 faltando
+v201_f44,mask,C2 canto inferior direito e parte superior
+v202_f31,mask,Topo C2
+v205_f138,mask,C2 Incorreta
+v205_f221,mask,Máscara Não Rotulada
+v209_f27,mask,Topo C3
+v210_f43,mask,Vértebra Faltando
+v216_f1,mask,Canto Inferior Esquerda C2
+v217_f126,mask,C2 Incorreta
+v21_f23,mask,C3 Incorreta
+v221_f151,mask,C6 Borda Inferior Errada
+v221_f35,mask,Tudo Errado
+v221_f41,mask,Parte Inferior da C5 está marcada na parte superior C6
+v221_f51,mask,C6 Canto Inferior Direito não foi considerado
+v226_f192,mask,Falta + Todas as vértebras estão deslocadas (melhor refazer tudo)
+v29_f22,mask,Topo da C2 + Borda direita Errada
+v30_f31,mask,Topo C2
+v32_f28,mask,"Tirar ""chifre na C4"""
+v40_f93,mask,C6 Errada
+v43_f3,mask,Base C2 + Topo C3
+v47_f50,mask,Bordas
+v49_f55,mask,C6 Incorreta
+v4_f41,mask,C2 Incorreta
+v4_f45,mask,Tudo Errado
+v50_f134,mask,"Base da C8 (acho que nem existe C8, mas você entendeu)"
+v52_f38,mask,Máscara Não Rotulada
+v52_f70,mask,Chifre C5 - Tirar
+v53_f17,mask,Vértebra Faltando
+v55_f89,mask,Topo C2 + Falta Vértebra
+v56_f20,mask,Topo C2
+v56_f98,mask,Topo C2
+v63_f78,mask,Borda Inferior C6
+v64_f47,mask,Vértebra Faltando
+v65_f92,mask,Tudo Errado
+v66_f111,mask,Tudo Errado
+v66_f161,mask,C2 Incorreta
+v67_f145,mask,Topo C2
+v68_f178,mask,Vértebra Faltando
+v68_f71,mask,Falta + Topo da C2 (um pouco menos)
+v73_f1,mask,C2 Incorreta + Falta Vértebra
+v73_f40,mask,Falta + Contorno geral errado
+v75_f1,mask,C4 Errada
+v77_f89,mask,C2 Incorreta
+v78_f92,mask,Topo C2 Errado (Acho que a C2 acaba seguindo a linha da espícula)
+v7_f88,mask,Topo C2 + Falta Vértebra
+v81_f47,mask,Topo da C2
+v81_f7,mask,C2 Incorreta
+v84_f221,mask,C6 Incorreta
+v88_f72,mask,Topo C2
+v89_f1,mask,C4 e C5 erradas
+v8_f40,mask,Parte Inferior da C7 está no topo da C8
+v8_f77,mask,Tudo Errado
+v92_f114,mask,bordas a mais
+v97_f77,mask,Topo C2
+v9_f40,mask,Remover marcação da C6 (não dá pra ver a borda direito)
