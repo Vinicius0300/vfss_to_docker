@@ -1,42 +1,76 @@
 video_frame,rotulo,motivo
 v100_f12,mask,Vértebra Faltando
+v100_f13,mask,Vértebra Faltando
+v100_f14,mask,Vértebra Faltando
 v101_f205,mask,Vértebra Faltando
 v101_f76,mask,Vértebra Faltando
+v102_f163,mask,Vértebra Faltando
+v103_f155,mask,Vértebra Faltando
+v103_f156,mask,Vértebra Faltando
+v103_f79,mask,Vértebra Faltando
+v106_f148,mask,Vértebra Faltando
 v106_f95,mask,Vértebra Faltando
+v106_f96,mask,Vértebra Faltando
 v106_f97,mask,Vértebra Faltando
+v107_f124,mask,Vértebra Faltando
 v107_f150,mask,Vértebra Faltando
 v107_f226,mask,Vértebra Faltando
 v108_f56,mask,Vértebra Faltando
+v108_f76,mask,Vértebra Faltando
 v109_f69,mask,Vértebra Faltando
 v110_f18,mask,Vértebra Faltando
+v110_f81,mask,Vértebra Faltando
+v111_f114,mask,Vértebra Faltando
 v11_f119,mask,C5 e C6 Incorretas
 v11_f12,mask,Vértebra Faltando
+v122_f99,mask,Vértebra Faltando
 v123_f157,mask,Vértebra Faltando
 v125_f223,mask,Vértebra Faltando
 v126_f15,mask,Máscara Não Rotulada
 v126_f150,mask,Vértebra Faltando
+v128_f236,mask,Vértebra Faltando
 v12_f30,mask,C4
 v133_f127,mask,Vértebra Faltando
 v133_f38,mask,Máscara Não Rotulada
+v134_f115,mask,Vértebra Faltando
 v135_f163,mask,Vértebra Faltando
+v136_f3,mask,Vértebra Faltando
 v138_f16,mask,Vértebra Faltando
+v138_f163,mask,Vértebra Faltando
 v138_f66,mask,Vértebra Faltando
+v138_f67,mask,Vértebra Faltando
+v139_f165,mask,Vértebra Faltando
+v139_f177,mask,Vértebra Faltando
+v139_f74,mask,Vértebra Faltando
 v13_f10,mask,Borda Direita C7
+v140_f120,mask,Vértebra Faltando
+v141_f175,mask,Vértebra Faltando
 v141_f74,mask,Vértebra Faltando
+v142_f115,mask,Vértebra Faltando
 v142_f120,mask,C6 - Canto inferior esquerdo
+v142_f121,mask,Vértebra Faltando
+v142_f156,mask,Vértebra Faltando
+v143_f146,mask,Vértebra Faltando
 v143_f182,mask,Vértebra Faltando
 v144_f154,mask,Vértebra Faltando
 v146_f160,mask,Topo C2 + Falta
+v147_f16,mask,Vértebra Faltando
+v147_f210,mask,Vértebra Faltando
 v147_f29,mask,Vértebra Faltando
+v147_f83,mask,Vértebra Faltando
+v147_f84,mask,Vértebra Faltando
 v14_f130,mask,C2 Incorreta
 v150_f45,mask,Borda a mais (menos na parte inferior)
 v154_f135,mask,Topo da C2
 v156_f209,mask,Vértebra Faltando
 v158_f13,mask,C2 Incorreta
 v158_f7,mask,Topo C2
+v159_f243,mask,Vértebra Faltando
+v159_f64,mask,Vértebra Faltando
 v15_f158,mask,Vértebra Faltando
 v161_f143,mask,Vértebra Faltando
 v161_f184,mask,Topo C2 + Falta Vértebra
+v161_f77,mask,Vértebra Faltando
 v162_f114,mask,Vértebra Faltando
 v162_f3,mask,Borda Direita da C2 + C3 Incorreta + Falta Vértebra
 v163_f196,mask,Tudo Errado
@@ -52,6 +86,7 @@ v172_f41,mask,Vértebra Faltando
 v178_f136,mask,Vértebra Faltando
 v178_f158,mask,Vértebra Faltando
 v178_f244,mask,Vértebra Faltando
+v179_f184,mask,Vértebra Faltando
 v17_f2,mask,Vértebra Faltando
 v182_f160,mask,Vértebra Faltando
 v182_f203,mask,Vértebra Faltando
@@ -64,6 +99,9 @@ v191_f136,mask,Topo C2
 v191_f212,mask,Topo da C2
 v192_f205,mask,Vértebra Faltando
 v192_f65,mask,Vértebra Faltando
+v193_f38,mask,Vértebra Faltando
+v193_f9,mask,Vértebra Faltando
+v199_f98,mask,Vértebra Faltando
 v19_f16,mask,Falta + Topo C2 (é meio reto)
 v201_f44,mask,Máscara Não Rotulada
 v202_f171,mask,Falta + Topo C2
@@ -74,32 +112,51 @@ v208_f147,mask,Falta + Topo da C6
 v209_f27,mask,C2 está marcada na C3 (C2 Faltando)
 v20_f152,mask,Vértebra Faltando
 v210_f148,mask,Vértebra Faltando
+v210_f77,mask,Vértebra Faltando
 v211_f253,mask,Vértebra Faltando
 v212_f77,mask,Vértebra Faltando
 v215_f187,mask,Vértebra Faltando
 v217_f126,mask,Vértebra Faltando
+v217_f19,mask,Vértebra Faltando
+v217_f38,mask,Vértebra Faltando
+v219_f205,mask,Vértebra Faltando
 v21_f26,mask,Vértebra Faltando
 v223_f27,mask,Vértebra Faltando
+v226_f235,mask,Vértebra Faltando
+v227_f4,mask,Vértebra Faltando
+v229_f193,mask,Vértebra Faltando
+v229_f36,mask,Vértebra Faltando
+v22_f149,mask,Vértebra Faltando
+v230_f172,mask,Vértebra Faltando
 v230_f71,mask,Vértebra Faltando
 v234_f188,mask,Vértebra Faltando
+v23_f152,mask,Vértebra Faltando
 v23_f3,mask,Vértebra Faltando
 v24_f39,mask,Vértebra Faltando
+v26_f45,mask,Vértebra Faltando
+v28_f100,mask,Vértebra Faltando
+v28_f160,mask,Vértebra Faltando
 v29_f22,mask,Topo da C2
 v29_f72,mask,C2 + Falta
+v31_f43,mask,Vértebra Faltando
 v33_f20,mask,Vértebra Faltando
 v33_f25,mask,Vértebra Faltando
 v34_f62,mask,Vértebra Faltando
 v35_f20,mask,Máscara Não Rotulada
+v37_f172,mask,Vértebra Faltando
+v37_f77,mask,Vértebra Faltando
 v38_f203,mask,Vértebra Faltando
 v38_f234,mask,Topo C2
 v38_f63,mask,Vértebra Faltando
 v39_f1,mask,C2 + Borda Direita
+v40_f69,mask,Vértebra Faltando
 v42_f89,mask,Vértebra Faltando
 v44_f122,mask,Vértebra Faltando
 v45_f12,mask,Vértebra Faltando
 v51_f45,mask,Máscara Não Rotulada
 v55_f46,mask,Tudo Errado
 v55_f89,mask,Vértebra Faltando
+v58_f86,mask,Topo  C2
 v60_f51,mask,Vértebra Faltando
 v60_f65,mask,Vértebra Faltando
 v60_f93,mask,Vértebra Faltando
@@ -109,7 +166,9 @@ v66_f166,mask,Tudo Errado
 v66_f167,mask,Remover C5 - não dá pra ver o contorno
 v68_f178,mask,Vértebra Faltando
 v68_f206,mask,Vértebra Faltando
+v69_f186,mask,Vértebra Faltando
 v6_f6,mask,C2 + Falta
+v72_f204,mask,Vértebra Faltando
 v72_f41,mask,Vértebra Faltando
 v73_f40,mask,Máscara Não Rotulada
 v74_f114,mask,Vértebra Faltando
@@ -120,6 +179,7 @@ v76_f24,mask,Tudo Errado
 v77_f89,mask,Máscara Não Rotulada
 v79_f123,mask,Vértebra Faltando
 v7_f145,mask,Vértebra Faltando
+v82_f43,mask,Vértebra Faltando
 v83_f29,mask,C2 + Falta x2
 v83_f3,mask,Vértebra Faltando
 v85_f92,mask,Vértebra Faltando

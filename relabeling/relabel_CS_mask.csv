@@ -1,34 +1,59 @@
 video_frame,rotulo,motivo
-v100_f10,mask,Borda Direita Errada
+v100_f10,mask,Vértebra Faltando
 v101_f74,mask,Topo C2 Errado + Borda Direita C4 e C5
 v105_f132,mask,"Base da C6 (está sobreposta pelo ombro, mas dá pra ver  um pouquinho)"
+v107_f124,mask,Vértebra Faltando
 v107_f226,mask,C2 Incorreta
 v108_f55,mask,Vértebra Faltando
+v108_f76,mask,Vértebra Faltando
 v10_f18,mask,Não marcou C2
+v111_f114,mask,Vértebra Faltando
+v111_f145,mask,Vértebra Faltando
+v111_f199,mask,Vértebra Faltando
+v113_f107,mask,Máscara Inexistente
 v126_f15,mask,Máscara Não Rotulada
 v128_f235,mask,Falta + Todas as bordas estão deslocadas para direita
 v12_f90,mask,Canto Inferior Esquerdo C6 + Topo C2
 v130_f152,mask,Topo da C2
+v131_f14,mask,Topo C2
+v131_f27,mask,Topo C2
+v131_f8,mask,Topo C2
+v132_f162,mask,Topo C2
+v134_f115,mask,Vértebra Faltando
 v134_f181,mask,Vértebra Faltando
 v136_f179,mask,Remover última vértebra incompleta
+v137_f135,mask,Topo C2
+v138_f163,mask,Vértebra Faltando
 v138_f66,mask,Acho que dá pra corrigir o canto inferior direito da C7 (dá pra ver a borda com Clahe)
+v138_f67,mask,Vértebra Faltando
+v139_f165,mask,Topo C2 + Falta Vértebra
+v140_f120,mask,Vértebra Faltando
+v140_f15,mask,Vértebra Faltando
+v141_f175,mask,Vértebra Faltando
 v141_f187,mask,Tudo Errado
+v142_f115,mask,Vértebra Faltando
+v142_f121,mask,Vértebra Faltando
 v143_f181,mask,Tudo Errado
 v143_f182,mask,Vértebra Faltando
 v144_f154,mask,Topo C2
 v144_f70,mask,Vértebra Faltando
 v145_f234,mask,Borda Direita Errada C4
+v145_f24,mask,Vértebra Faltando
+v147_f16,mask,Vértebra Faltando
+v147_f210,mask,Vértebra Faltando
 v14_f109,mask,"Borda Direita Incorreta C3, C4"
 v150_f111,mask,Topo C2
 v154_f135,mask,Topo da C2
 v156_f145,mask,C2 Incorreta
 v156_f227,mask,Base C8
 v159_f203,mask,C2 Incorreta
+v159_f64,mask,Vértebra Faltando
 v15_f114,mask,Topo Direito C2 + Falta Vértebra
 v15_f27,mask,Borda Inferior da C5 está no Topo da C6
 v165_f131,mask,Vértebra Faltando
 v168_f174,mask,C2 Incorreta
 v16_f122,mask,Tudo Errado
+v16_f37,mask,Vértebra Faltando
 v170_f161,mask,Borda Direita C4 (se quiser deixar a da C5 menos reta também...)
 v170_f72,mask,C2 Incorreta
 v171_f110,mask,Tudo Errado
@@ -39,6 +64,8 @@ v176_f79,mask,Base da C2
 v177_f124,mask,Vértebra Faltando
 v179_f143,mask,Vértebra Faltando
 v179_f185,mask,Vértebra Faltando
+v17_f45,mask,Vértebra Faltando
+v17_f54,mask,Vértebra Faltando
 v181_f223,mask,Vértebra Faltando
 v182_f160,mask,Vértebra Faltando
 v182_f161,mask,Máscara Não Rotulada
@@ -46,13 +73,19 @@ v182_f244,mask,Borda Direita C4
 v185_f76,mask,Falta + C2 Topo
 v188_f138,mask,Tudo Errado
 v18_f160,mask,Vértebra Faltando
+v18_f182,mask,Vértebra Faltando
 v190_f155,mask,C5
 v190_f163,mask,C2 + Falta
 v192_f200,mask,Vértebra Faltando
 v192_f65,mask,Topo C2
+v193_f38,mask,Vértebra Faltando
+v193_f9,mask,Vértebra Faltando
+v199_f98,mask,Vértebra Faltando
 v19_f16,mask,Vértebra Faltando
 v1_f83,mask,C2 + C5 + C6 faltando
 v201_f44,mask,C2 canto inferior direito e parte superior
+v201_f95,mask,Topo C2
+v202_f21,mask,Topo C2
 v202_f31,mask,Topo C2
 v205_f138,mask,C2 Incorreta
 v205_f221,mask,Máscara Não Rotulada
@@ -60,15 +93,22 @@ v209_f27,mask,Topo C3
 v210_f43,mask,Vértebra Faltando
 v216_f1,mask,Canto Inferior Esquerda C2
 v217_f126,mask,C2 Incorreta
+v217_f19,mask,Topo C2 + Falta
+v217_f38,mask,Vértebra Faltando
+v219_f205,mask,Topo C2 + Falta Vértebra
 v21_f23,mask,C3 Incorreta
 v221_f151,mask,C6 Borda Inferior Errada
 v221_f35,mask,Tudo Errado
 v221_f41,mask,Parte Inferior da C5 está marcada na parte superior C6
 v221_f51,mask,C6 Canto Inferior Direito não foi considerado
+v226_f12,mask,Vértebra Faltando
 v226_f192,mask,Falta + Todas as vértebras estão deslocadas (melhor refazer tudo)
 v29_f22,mask,Topo da C2 + Borda direita Errada
+v2_f88,mask,Vértebra Faltando
 v30_f31,mask,Topo C2
+v31_f43,mask,Vértebra Faltando
 v32_f28,mask,"Tirar ""chifre na C4"""
+v40_f69,mask,Vértebra Faltando
 v40_f93,mask,C6 Errada
 v43_f3,mask,Base C2 + Topo C3
 v47_f50,mask,Bordas
@@ -90,6 +130,8 @@ v66_f161,mask,C2 Incorreta
 v67_f145,mask,Topo C2
 v68_f178,mask,Vértebra Faltando
 v68_f71,mask,Falta + Topo da C2 (um pouco menos)
+v69_f186,mask,Vértebra Faltando
+v72_f204,mask,Vértebra Faltando
 v73_f1,mask,C2 Incorreta + Falta Vértebra
 v73_f40,mask,Falta + Contorno geral errado
 v75_f1,mask,C4 Errada
@@ -104,5 +146,6 @@ v89_f1,mask,C4 e C5 erradas
 v8_f40,mask,Parte Inferior da C7 está no topo da C8
 v8_f77,mask,Tudo Errado
 v92_f114,mask,bordas a mais
+v97_f24,mask,Vértebra Faltando
 v97_f77,mask,Topo C2
 v9_f40,mask,Remover marcação da C6 (não dá pra ver a borda direito)
